@@ -3,7 +3,7 @@
 ## Overview
 
 The `senzing/senzing-debug` docker image is used for debugging Senzing deployments.
-When launched, it "sleeps".
+When is run, it "sleeps".
 This allows a user to "`docker exec ...`" into the container and inspect the Senzing environment.
 
 Python commands stored in `/opt/senzing/g2/python` can be run in the docker container.
