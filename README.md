@@ -156,7 +156,7 @@ The following software programs need to be installed:
     export GIT_REPOSITORY=docker-senzing-debug
     ```
 
-   Then follow steps in [clone-repository](https://github.com/Senzing/knowledge-base/blob/master/HOWTO/clone-repository.md).
+1. Follow steps in [clone-repository](https://github.com/Senzing/knowledge-base/blob/master/HOWTO/clone-repository.md) to install the Git repository.
 
 1. After the repository has been cloned, be sure the following are set:
 
