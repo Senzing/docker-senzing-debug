@@ -1,11 +1,11 @@
 ARG BASE_IMAGE=senzing/senzing-base
 FROM ${BASE_IMAGE}
 
-ENV REFRESHED_AT=2019-05-01
+ENV REFRESHED_AT=2019-07-10
 
 LABEL Name="senzing/senzing-debug" \
       Maintainer="support@senzing.com" \
-      Version="1.0.0"
+      Version="1.0.1"
 
 HEALTHCHECK CMD ["/app/healthcheck.sh"]
 
@@ -13,18 +13,13 @@ HEALTHCHECK CMD ["/app/healthcheck.sh"]
 
 RUN apt-get update \
  && apt-get -y install \
-    build-essential \
-    curl \
     fio \
     htop \
     iotop \
     ipython \
     itop \
-    jq \
     net-tools \
     pstack \
-    python-dev \
-    python-pip \
     python-setuptools \
     tree \
     vim \
@@ -32,7 +27,7 @@ RUN apt-get update \
 
 # Install packages via pip.
 
-RUN pip install \
+RUN pip3 install \
     setuptools \
     csvkit
 
