@@ -183,7 +183,7 @@ The following software programs need to be installed:
 1. Option #1 - Using `docker` command and GitHub.
 
     ```console
-    sudo docker build --tag senzing/senzing-base https://github.com/senzing/docker-senzing-debug.git
+    sudo docker build --tag senzing/senzing-debug https://github.com/senzing/docker-senzing-debug.git
     ```
 
 1. Option #2 - Using `docker` command and local repository.
