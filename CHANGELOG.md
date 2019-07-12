@@ -8,12 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.1] - 2019-07-10
 
-### Added
+### Changed in 1.0.1
 
-- Support for Python3.
+- Migrate to python3
 
 ## [1.0.0] - 2019-07-10
 
-### Added
+### Added in 1.0.0
 
 - Support for Python 2.7.
