@@ -1,13 +1,15 @@
-ARG BASE_IMAGE=senzing/senzing-base:1.0.3
+ARG BASE_IMAGE=senzing/senzing-base:latest
 FROM ${BASE_IMAGE}
 
 ENV REFRESHED_AT=2019-07-10
 
 LABEL Name="senzing/senzing-debug" \
       Maintainer="support@senzing.com" \
-      Version="1.0.1"
+      Version="1.0.2"
 
 HEALTHCHECK CMD ["/app/healthcheck.sh"]
+
+USER root
 
 # Install packages via apt.
 
@@ -38,5 +40,4 @@ COPY ./rootfs /
 # Runtime execution.
 
 WORKDIR /app
-ENTRYPOINT ["/app/docker-entrypoint.sh"]
 CMD ["/app/sleep-infinity.sh"]
