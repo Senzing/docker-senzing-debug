@@ -8,6 +8,11 @@ This allows a user to "`docker exec ...`" into the container and inspect the Sen
 
 Python commands stored in `/opt/senzing/g2/python` can be run in the docker container.
 
+### Related artifacts
+
+1. [DockerHub](https://hub.docker.com/r/senzing/senzing-debug)
+1. [Helm Chart](https://github.com/Senzing/charts/tree/master/charts/senzing-debug)
+
 ### Contents
 
 1. [Expectations](#expectations)
