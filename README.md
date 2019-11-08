@@ -132,25 +132,6 @@ The following examples show how to identify each output directory.
     export SENZING_NETWORK_PARAMETER="--net ${SENZING_NETWORK}"
     ```
 
-### Run docker container
-
-1. Run docker container.
-   Example:
-
-    ```console
-    sudo docker run \
-      --cap-add=ALL \
-      --interactive \
-      --rm \
-      --tty \
-      --volume ${SENZING_DATA_VERSION_DIR}:/opt/senzing/data \
-      --volume ${SENZING_ETC_DIR}:/etc/opt/senzing \
-      --volume ${SENZING_G2_DIR}:/opt/senzing/g2 \
-      --volume ${SENZING_VAR_DIR}:/var/opt/senzing \
-      ${SENZING_NETWORK_PARAMETER} \
-      senzing/senzing-debug
-    ```
-
 ### MSSQL support
 
 :thinking: **Optional:**  This is only needed if using a Microsoft MSSQL database.
@@ -169,6 +150,26 @@ Use if a different userid is required.
 
     ```console
     export SENZING_OPT_MICROSOFT_DIR_PARAMETER="--volume ${SENZING_OPT_MICROSOFT_DIR}:/opt/microsoft"
+    ```
+
+### Run docker container
+
+1. Run docker container.
+   Example:
+
+    ```console
+    sudo docker run \
+      --cap-add=ALL \
+      --interactive \
+      --rm \
+      --tty \
+      --volume ${SENZING_DATA_VERSION_DIR}:/opt/senzing/data \
+      --volume ${SENZING_ETC_DIR}:/etc/opt/senzing \
+      --volume ${SENZING_G2_DIR}:/opt/senzing/g2 \
+      --volume ${SENZING_VAR_DIR}:/var/opt/senzing \
+      ${SENZING_NETWORK_PARAMETER} \
+      ${SENZING_OPT_MICROSOFT_DIR_PARAMETER} \
+      senzing/senzing-debug
     ```
 
 ## Develop
