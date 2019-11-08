@@ -25,6 +25,7 @@ RUN apt-get update \
     net-tools \
     pstack \
     python-setuptools \
+    strace \
     tree \
     vim \
  && rm -rf /var/lib/apt/lists/*
