@@ -1,11 +1,11 @@
-ARG BASE_IMAGE=senzing/senzing-base:1.2.1
+ARG BASE_IMAGE=senzing/senzing-base:1.3.0
 FROM ${BASE_IMAGE}
 
 ENV REFRESHED_AT=2019-08-05
 
 LABEL Name="senzing/senzing-debug" \
       Maintainer="support@senzing.com" \
-      Version="1.2.1"
+      Version="1.2.2"
 
 HEALTHCHECK CMD ["/app/healthcheck.sh"]
 
