@@ -35,7 +35,6 @@ Python commands located in `/opt/senzing/g2/python` can be run in the docker con
     1. [Clone repository](#clone-repository)
     1. [Build Docker image](#build-docker-image)
 1. [Examples](#examples)
-    1. [Examples of CLI](#examples-of-cli)
     1. [Examples of Docker](#examples-of-docker)
 1. [Advanced](#advanced)
     1. [Configuration](#configuration)
