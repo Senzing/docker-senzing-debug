@@ -17,12 +17,14 @@ USER root
 
 RUN apt-get update \
  && apt-get -y install \
+    elfutils \
     fio \
     htop \
     iotop \
     ipython \
     itop \
     net-tools \
+    procps \
     pstack \
     python-setuptools \
     strace \
