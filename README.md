@@ -29,6 +29,7 @@ Python commands located in `/opt/senzing/g2/python` can be run in the docker con
     1. [Docker volumes](#docker-volumes)
     1. [Docker network](#docker-network)
     1. [Docker user](#docker-user)
+    1. [MySQL support](#mysql-support)
     1. [Run Docker container](#run-docker-container)
 1. [Develop](#develop)
     1. [Prerequisites for development](#prerequisites-for-development)
@@ -172,6 +173,17 @@ Use if a different userid (UID) is required.
     export SENZING_RUNAS_USER_PARAMETER="--user ${SENZING_RUNAS_USER}"
     ```
 
+### MySQL support
+
+:thinking: **Optional:**  If a MySQL database will be accessed, the MySQL client needs to be installed at runtime.
+
+1. Construct parameter for `docker run`.
+   Example:
+
+    ```console
+    export SENZING_INSTALL_MYSQL_CLIENT_PARAMETER="--env INSTALL_MYSQL_CLIENT=y"
+    ```
+
 ### Run Docker container
 
 Although the `Docker run` command looks complex,
@@ -194,6 +206,7 @@ Unset environment variables have no effect on the
       --volume ${SENZING_VAR_DIR}:/var/opt/senzing \
       ${SENZING_NETWORK_PARAMETER} \
       ${SENZING_RUNAS_USER_PARAMETER} \
+      ${SENZING_INSTALL_MYSQL_CLIENT_PARAMETER} \
       senzing/senzing-debug
     ```
 
