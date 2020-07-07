@@ -6,11 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 [markdownlint](https://dlaa.me/markdownlint/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.5] - 2020-07-07
+
+### Changed in 1.3.5
+
+- Update to senzing/senzing-base:1.5.1
+
 ## [1.3.4] - 2020-06-01
 
 ### Changed in 1.3.4
 
-- Added additional libs required to use MySQL ODBC when optional MySQL env var is set. Temporary until Senzing API V2.0 and new EDA tools no longer use G2Database.py and pyodbc module 
+- Added additional libs required to use MySQL ODBC when optional MySQL env var is set. Temporary until Senzing API V2.0 and new EDA tools no longer use G2Database.py and pyodbc module
 
 ## [1.3.3] - 2020-05-29
 
